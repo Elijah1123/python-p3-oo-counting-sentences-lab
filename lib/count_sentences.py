@@ -34,3 +34,12 @@ class MyString:
         valid_sentences = [s for s in sentences if s.strip()]
         return len(valid_sentences)
 
+if __name__ == "__main__":
+    text = MyString("Hello! How are you? I am fine.")
+    
+    print("Value:", text.value)
+    print("Is sentence?", text.is_sentence())
+    print("Is question?", text.is_question())
+    print("Is exclamation?", text.is_exclamation())
+    print("Number of sentences:", text.count_sentences())
+
